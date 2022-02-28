@@ -1,6 +1,7 @@
+// env-config.js
 const debug = process.env.NODE_ENV !== 'production'
 const name = 'small-magic-project-deployment'
 
 module.exports = {
-  assetPrefix: !debug ? `/${name}/` : '',
+  'process.env.BACKEND_URL': !debug ? `/${name}` : '',
 }
