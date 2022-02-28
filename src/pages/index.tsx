@@ -1,3 +1,9 @@
+import { useRouter } from "next/router";
+import { Button } from "@mui/material";
 export default function Home() {
-return <div>하g이</div>
+  const router = useRouter();
+  const handleClickRouter = (page: string) => {
+    router.push(page);
+  };
+  return <Button onClick={() => handleClickRouter("resume")}>이력서로</Button>;
 }
