@@ -4,18 +4,11 @@ import { Global } from "@emotion/react";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fal } from "@fortawesome/pro-light-svg-icons";
-import { far } from "@fortawesome/pro-regular-svg-icons";
-import { fas } from "@fortawesome/pro-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { RecoilRoot } from "recoil";
 import reset from "../styles/reset";
 import createEmotionCache from "../utils/createEmotionCache";
 import { theme } from "../styles/theme";
 import { useRouter } from "next/router";
-library.add(fal, far, fas, fab);
 const clientSideEmotionCache = createEmotionCache();
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
