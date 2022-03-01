@@ -6,9 +6,16 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { RecoilRoot } from "recoil";
 import reset from "../styles/reset";
-import createEmotionCache from "../utils/createEmotionCache";
 import { theme } from "../styles/theme";
 import { useRouter } from "next/router";
+import { createEmotionCache } from "../utils";
+import GlobalTemplate from "../components/templates/GlobalTemplate";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/pro-solid-svg-icons";
+import { far } from "@fortawesome/pro-regular-svg-icons";
+import { fal } from "@fortawesome/pro-light-svg-icons";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+library.add(fas, far, fal);
 const clientSideEmotionCache = createEmotionCache();
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -159,7 +166,9 @@ function MyApp(props: MyAppProps) {
       <RecoilRoot>
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          <Component {...pageProps} key={router.route} />
+          <GlobalTemplate>
+            <Component {...pageProps} key={router.route} />
+          </GlobalTemplate>
         </ThemeProvider>
       </RecoilRoot>
     </CacheProvider>

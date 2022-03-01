@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import { Button } from "@mui/material";
-export default function Home() {
+import { useEffect } from "react";
+export default function Index() {
   const router = useRouter();
-  const handleClickRouter = (page: string) => {
-    router.push(page);
-  };
-  return <Button onClick={() => handleClickRouter("resume")}>이력서로</Button>;
+  useEffect(() => {
+    router.push("/main");
+  }, []);
+  return null;
 }

@@ -1,6 +1,6 @@
-const debug = process.env.NODE_ENV !== 'production'
-const name = 'https://gunylee.github.io/react-ts-nextjs/'
-
 module.exports = {
-  assetPrefix: !debug ? `/${name}/` : '',
-}
+  assetPrefix:
+    process.env.NODE_ENV === "production"
+      ? "https://gunylee.github.io/react-ts-nextjs"
+      : "",
+};

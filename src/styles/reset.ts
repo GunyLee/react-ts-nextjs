@@ -1,10 +1,8 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
 const reset = css`
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-  @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
   html,
   body,
   div,
@@ -93,7 +91,6 @@ const reset = css`
     font: inherit;
     vertical-align: baseline;
   }
-  /* HTML5 display-role reset for older browsers */
   article,
   aside,
   details,
@@ -107,9 +104,6 @@ const reset = css`
   section {
     display: block;
   }
-  body {
-    line-height: 1;
-  }
   ol,
   ul {
     list-style: none;
@@ -122,18 +116,12 @@ const reset = css`
   blockquote:after,
   q:before,
   q:after {
-    content: '';
+    content: "";
     content: none;
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  html {
-    height: 100vh;
-  }
-  body {
-    scroll-behavior: smooth;
   }
   ul {
     padding: 0;
@@ -141,18 +129,6 @@ const reset = css`
   li {
     list-style: none;
   }
-  /* legend,
-  caption {
-    height: 0px;
-    overflow: hidden;
-    font-size: 0em;
-    line-height: 0em;
-    text-indent: -9999px;
-    width: 0;
-    margin: -1px 0 0 0;
-    position: relative;
-    top: -1px;
-  } */
   colgroup {
     display: table-column-group;
   }
@@ -176,7 +152,7 @@ const reset = css`
     border: 0;
     border-bottom: 2px #e1e1e1 solid;
   }
-  input[type='button'] {
+  input[type="button"] {
     border-radius: 0;
   }
   input:-webkit-autofill,
@@ -214,13 +190,6 @@ const reset = css`
     margin: 0;
     padding: 0;
   }
-  * {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(18, 18, 18, 0) !important;
-  }
-  html {
-    -webkit-text-size-adjust: none;
-  }
   div {
     cursor: default;
   }
@@ -233,7 +202,7 @@ const reset = css`
     vertical-align: middle;
   }
   input {
-    font-size: 12px;
+    font-size: 17px;
     color: #000;
     vertical-align: middle;
     opacity: 1;
@@ -241,7 +210,7 @@ const reset = css`
   select,
   option,
   textarea {
-    font-size: 12px;
+    font-size: 17px;
     color: #000;
     vertical-align: middle;
   }
@@ -269,7 +238,7 @@ const reset = css`
     cursor: pointer;
     background-color: transparent;
   }
-  [role='button'] {
+  [role="button"] {
     cursor: pointer;
   }
   button:focus {
@@ -278,31 +247,27 @@ const reset = css`
   strong {
     font-weight: bold;
   }
-  * {
-    font-family: 'Montserrat', 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif !important;
-    font-display: block,
+  html {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
   }
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap') format('truetype');
-    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
-}
   body {
-    /* font-family: "Noto Sans KR", sans-serif; */
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol"; */
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: #000;
-    font-weight: normal;
-    line-height: 160%;
-    font-size: 12px;
-    background-color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
     letter-spacing: -0.4px !important;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(18, 18, 18, 0) !important;
+    font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif !important;
+    font-display: block;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: 100%;
   }
   ::-moz-scrollbar {
     display: none !important;
@@ -344,11 +309,11 @@ const reset = css`
   input::placeholder {
     color: #ced4da;
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     padding: 0;
   }
-  input[type='text'],
-  input[type='password'] {
+  input[type="text"],
+  input[type="password"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -368,17 +333,20 @@ const reset = css`
     width: 0;
     display: none;
   }
+  :root {
+    --sait: var(--android-safe-area-inset-top, env(safe-area-inset-top));
+    --saib: var(--android-safe-area-inset-bottom, env(safe-area-inset-bottom));
+    --sail: var(--android-safe-area-inset-left, env(safe-area-inset-left));
+    --sair: var(--android-safe-area-inset-right, env(safe-area-inset-right));
+  }
   #__next {
-    /* width: 100%;
-    height: 100%; */
-    font-weight: bold;
-    --sat: var(--sait);
-    --sar: var(--sair);
-    --sab: var(--saib);
-    --sal: var(--sail);
-    overflow: hidden;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
+    width: 100%;
+    height: 100vh;
+  }
+  .MuiSvgIcon-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
