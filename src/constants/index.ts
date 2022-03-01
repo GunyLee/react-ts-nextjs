@@ -27,17 +27,17 @@ export const globalNav = [
         collapses: [
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro1",
+            value: "intro4",
             children: "자기소개",
           },
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro2",
+            value: "intro5",
             children: "경력",
           },
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro3",
+            value: "intro6",
             children: "학력",
           },
         ],
@@ -51,18 +51,18 @@ export const globalNav = [
         collapses: [
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro1",
-            children: "자기소개",
+            value: "blog1",
+            children: "기술",
           },
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro2",
-            children: "경력",
+            value: "blog2",
+            children: "여담",
           },
           {
             title: { value: "resume", children: "이력서", name: "pen" },
-            value: "intro3",
-            children: "학력",
+            value: "blog3",
+            children: "자기계발",
           },
         ],
       },
