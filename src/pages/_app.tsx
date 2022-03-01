@@ -27,7 +27,7 @@ function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta charSet="utf-8" />
-        <title>기구까지 챙겨주는 운동 OTT 서비스, 써클인 플러스</title>
+        <title>밍궁이의 예랑이, 거니의 공간</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover"
@@ -44,11 +44,11 @@ function MyApp(props: MyAppProps) {
         <meta property="og:site_name" content="써클인 플러스" />
         <meta
           property="og:title"
-          content="기구까지 챙겨주는 운동 OTT 서비스, 써클인 플러스"
+          content="밍궁이의 예랑이, 거니의 공간"
         />
         <meta
           property="og:description"
-          content="비싸고 효과없는 온라인 PT는 그만! 기구까지 챙겨주고 스케줄까지 잡아주는 진짜 홈PT, 써클인 플러스"
+          content="궁디팡팡해죠"
         />
         <meta property="og:image" content="/static/share.png" />
         <meta property="og:image:width" content="200" />
@@ -59,12 +59,12 @@ function MyApp(props: MyAppProps) {
         <meta name="twitter:creator" content="" data-react-helmet="true" />
         <meta
           name="twitter:title"
-          content="기구까지 챙겨주는 운동 OTT 서비스, 써클인 플러스"
+          content="밍궁이의 예랑이, 거니의 공간"
           data-react-helmet="true"
         />
         <meta
           name="twitter:description"
-          content="비싸고 효과없는 온라인 PT는 그만! 기구까지 챙겨주고 스케줄까지 잡아주는 진짜 홈PT, 써클인 플러스"
+          content="궁디팡팡해죠"
           data-react-helmet="true"
         />
         <meta name="twitter:image" content="/static/share.png" />

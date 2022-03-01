@@ -22,9 +22,17 @@ export default function GlobalNav({ data }: Props) {
           overflowY: "auto",
         }}
       >
-        {data.map((item, index) => (
-          <GlobalNavItem key={index} item={item} />
-        ))}
+        <Box
+          sx={{
+            mt: 1,
+            pl: 1.25,
+            pr: 1.25,
+          }}
+        >
+          {data.map((item, index) => (
+            <GlobalNavItem key={index} item={item} />
+          ))}
+        </Box>
       </Box>
     </>
   );

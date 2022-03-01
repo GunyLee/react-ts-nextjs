@@ -13,13 +13,7 @@ export default function GlobalNavItem({ item }: Props) {
     setChecked((prev) => !prev);
   };
   return (
-    <Box
-      sx={{
-        mt: 1,
-        pl: 1.25,
-        pr: 1.25,
-      }}
-    >
+    <Box>
       <GlobalNavTitleItem
         item={{ ...item.title, onClick: handleClick, checked: checked }}
       />
